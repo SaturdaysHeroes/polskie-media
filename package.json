@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Twitter bot created to re-tweet information from the Polish press.",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/SaturdaysHeroes/polskie-media/issues"
   },
-  "homepage": "https://github.com/SaturdaysHeroes/polskie-media#readme"
+  "homepage": "https://github.com/SaturdaysHeroes/polskie-media#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "twitter": "^1.7.1"
+  }
 }
