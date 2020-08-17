@@ -1,8 +1,15 @@
 import {Twitter} from "./twitter.js";
 
 // Profile IDs to follow.
-// TVP Info, TVN 24, Polsat News, Onet, Rzeczpospolita, NewsweekPolska. 
-const profiles = [47295451, 14493047, 2383788666, 15720598, 194399035, 53054655];
+const profiles = [
+    47295451, // TVP Info 
+    14493047, // TVN 24
+    2383788666, // Polsat News
+    15720598, // Onet
+    194399035, // Rzeczpospolita
+    53054655, // Newsweek Polska
+    1073461458 // Telewizja Republika
+];
 const message = " Chciałbyś automatycznie otrzymywać wiadomości ze wszystkich polskich mediów? Daj mi followa! Jestem w pełni niezależnym botem retweetującym wszystkie polskie media."
 const shouldReply = true; 
 
