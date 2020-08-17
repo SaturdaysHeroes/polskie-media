@@ -12,7 +12,7 @@ const profiles = [
     153802461 // wPolityce
 ];
 const message = " Chciałbyś automatycznie otrzymywać wiadomości ze wszystkich polskich mediów? Daj mi followa! Jestem w pełni niezależnym botem retweetującym wszystkie polskie media."
-const shouldReply = false; 
+const shouldReply = true; 
 var lastReply = Date.now();
 
 const stream = Twitter.stream("statuses/filter", {follow: profiles}); 
