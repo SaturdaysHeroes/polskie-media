@@ -19,6 +19,6 @@
   "homepage": "https://github.com/SaturdaysHeroes/polskie-media#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "twitter": "^1.7.1"
+    "twit": "^2.2.11"
   }
 }
