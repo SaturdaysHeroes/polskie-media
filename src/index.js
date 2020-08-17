@@ -9,7 +9,8 @@ const profiles = [
     194399035, // Rzeczpospolita
     53054655, // Newsweek Polska
     1073461458, // Telewizja Republika
-    153802461 // wPolityce
+    153802461, // wPolityce
+    1076576528 // DoRzeczy
 ];
 const message = " Chciałbyś automatycznie otrzymywać wiadomości ze wszystkich polskich mediów? Daj mi followa! Jestem w pełni niezależnym botem retweetującym wszystkie polskie media."
 const shouldReply = true; 
