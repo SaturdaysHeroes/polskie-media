@@ -23,7 +23,10 @@ stream.on("tweet", (tweet) => {
 
     if (shouldReply && (Date.now() - lastReply > cooldown)) {
         Twitter.post("statuses/update", {status: `@${tweet.user.screen_name} ${message}`, in_reply_to_status_id: tweet.id_str, auto_populate_reply_metadata: true}, (err) => {
-            if (err) throw err;
+            if (err) {
+                console.log("[ERROR] " + err);
+                return;
+            };
 
             console.log("[REPLY] Successfully replied!")
             lastReply = Date.now();
@@ -31,7 +34,10 @@ stream.on("tweet", (tweet) => {
     };
 
     Twitter.post("statuses/retweet/" + tweet.id_str, {}, (err) => {
-        if (err) throw err;
+        if (err) {
+            console.log("[ERROR] " + err);
+            return;
+        };
 
         console.log("[RETWEET] Successfully retweeted!");
     });
